@@ -1,0 +1,11 @@
+{
+  "name": "databae",
+  "version": "1.0.0",
+  "description": "a simple localStorage abstraction ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: lol\" && exit 1"
+  },
+  "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
+  "license": "MIT"
+}
