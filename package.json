@@ -7,5 +7,13 @@
     "test": "echo \"Error: lol\" && exit 1"
   },
   "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coleww/databae.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coleww/databae/issues"
+  },
+  "homepage": "https://github.com/coleww/databae#readme"
 }
