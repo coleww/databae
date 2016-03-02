@@ -32,8 +32,8 @@ function push (key, el) {
 
 function remove (key, el) {
   var arr = get(key)
-  var i = arr.indexOf(el)
-  set(key, arr.splice(i, 1))
+  arr.splice(arr.indexOf(el), 1)
+  set(key, arr)
 }
 
 module.exports = {
