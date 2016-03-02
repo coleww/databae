@@ -3,8 +3,9 @@ function get (key) {
 }
 
 function set (key, object) {
+  if (typeof object == 'string') throw("NO STRINGS ATTACHED!!!!!!!!!!!!!!!!!!")
   var stringCheese = JSON.stringify(object)
-  // if (stringCheese.length > 5242878) throw('something truly awful has happened')
+  if (stringCheese.length > 5242878) throw('wow, u do have a rly big team')
   localStorage.setItem(key, stringCheese)
 }
 
@@ -18,7 +19,7 @@ function dec (key, amt) {
 
 function mathIt (key, amt) {
   var oldVal = get(key)
-  // if (typeof oldVal !== 'number') throw('u tried to __crement ' + oldVal + ' but it wasnt having it')
+  if (typeof oldVal !== 'number') throw('u tried to __crement ' + oldVal + ' but it wasnt having it')
   var newVal = oldVal + amt
   set(key, newVal)
   return newVal
@@ -36,13 +37,18 @@ function remove (key, el) {
   set(key, arr)
 }
 
+function clear () {
+  localStorage.clear()
+}
+
 module.exports = {
   get: get,
   set: set,
   inc: inc,
   dec: dec,
   push: push,
-  remove: remove
+  remove: remove,
+  clear: clear
 }
 
 

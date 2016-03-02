@@ -1,10 +1,10 @@
 {
   "name": "databae",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a simple localStorage abstraction ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: lol\" && exit 1"
+    "test": "browserify test.js -d -o testbundle.js"
   },
   "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
   "license": "MIT",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/coleww/databae/issues"
   },
-  "homepage": "https://github.com/coleww/databae#readme"
+  "homepage": "https://github.com/coleww/databae#readme",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "tape": "^4.4.0"
+  }
 }

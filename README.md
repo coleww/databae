@@ -7,6 +7,12 @@ a simple localStorage abstraction. There are many like it but this one is mine.
 
 auto JSON.(stringify/parse)'s stuff so you don't have to care about squat
 
+-----------------------------
+
+DOES NOT ACCEPT PLAIN STRING INPUT DO NOT EVER PUT A STRING INTO THE DATABAE
+
+-----------------------------
+
 ### general
 - get(key)
 - set(key, val)
