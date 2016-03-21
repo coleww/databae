@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/coleww/databae#readme",
   "devDependencies": {
-    "browserify": "^13.0.0",
-    "tape": "^4.4.0"
+    "browserify": "^13.0.0"
   }
 }
